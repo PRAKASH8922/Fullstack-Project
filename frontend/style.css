@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 40px;
+  background-color: white;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: teal;
+}
+
+.frm {
+  background-color: white;
+  width: 350px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px teal;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: stretch;
+  text-align: left;
+}
+
+.frm label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.frm input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+.frm button {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+table {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 10px teal;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 10px;
+  text-align: center;
+  border: 1px solid lightgray;
+}
+
+th {
+  background-color: teal;
+  color: white;
+}
+
+td button {
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+#bt_logout{
+  background-color: blue;
+  font-weight: bold;
+}
+
+button[onclick="logout()"] {
+  margin-top: 20px;
+  background-color: gray;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-box {
+  background-color: white;
+  width: 350px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px teal;
+  text-align: left;
+}
+
+.form-box label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: teal;
+  color: white;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.password-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+#togglePassword,
+#toggleSignupPassword {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#message,
+#signupMessage {
+  margin-top: 10px;
+  font-size: 14px;
+  color: red;
+}
+
+.btn_edit {
+  background-color: teal;
+  color: white;
+}
+
+.btn_delete {
+  background-color: darkred;
+  color: white;
+}
+
+.btn_edit i,
+.btn_delete i {
+  color: white;
+}

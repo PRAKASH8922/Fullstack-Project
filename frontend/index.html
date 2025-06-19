@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link rel="icon" href="favicon.ico" />
+
+</head>
+<body>
+    <h1 id="formTitle">Welcome to dashboard</h1>
+    <form action="#" class="frm">
+        <label for="name" >Name:</label>
+        <input type="text" id="name" placeholder="Enter the name">
+
+        <label for="name" >Ph-no :</label>
+        <input type="tel" id="phone" placeholder="Enter the number">
+
+        <label for="name" >Email :</label>
+        <input type="email" id="email" placeholder="Enter the email">
+
+        <label for="name">Pass :</label>
+        <input type="password" id="password" placeholder="Enter the Pass"/>
+        
+        <button type="submit" id="btn">Save</button>
+    </form>
+    <table id="userTable">
+        <tr>
+            <th>S.no</th>
+            <th>Name</th>
+            <th>Ph-no</th>
+            <th>Email</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <!-- <tr>
+            <td>01</td>
+            <td>Psycho</td>
+            <td>9876543210</td>
+            <td>psycho@gmail.com</td>
+            <td><button id="btn_edit"><i class='bxr  bx-edit-alt'></i></button></i></td>
+            <td><button id="btn_delete"><i class='bxr  bxs-backspace'></i></button></i></td>
+        </tr> -->
+    </table>
+    <button onclick="logout()" id="bt_logout">Logout</button>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
