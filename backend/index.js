@@ -69,7 +69,7 @@ app.delete('/user/:id', (req, res) => {
 });
 
 // Login
-app.post('/user/login', (req, res) => {
+app.post('/login', (req, res) => {
   const { email, password } = req.body;
   const sql = "SELECT id, name, email FROM ct_user_details WHERE email = ? AND password = ?";
   conn.query(sql, [email, password], (err, result) => {
